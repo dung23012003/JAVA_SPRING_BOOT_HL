@@ -1,6 +1,6 @@
 package com.lesson3.lesson3.controller;
+
 import com.lesson3.lesson3.request.NNDEmployeeRequest;
-import com.lesson3.lesson3.controller.NNDEmployeeController;
 import com.lesson3.lesson3.service.NNDEmployeeService;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,5 +24,15 @@ public class NNDEmployeeController {
     @PostMapping("/add")
     public void nndEmployeeAdd(@RequestBody NNDEmployeeRequest nndEmployeeRequest) {
         nndEmployeeService.nndEmployeeAdd(nndEmployeeRequest);
+    }
+
+    @PutMapping("/update/{id}")
+    public void nndEmployeeUpdate(@PathVariable Long id, @RequestBody NNDEmployeeRequest nndEmployeeRequest) {
+        nndEmployeeService.nndEmployeeUpdate(id, nndEmployeeRequest);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void nndEmployeeDelete(@PathVariable Long id) {
+        nndEmployeeService.nndEmployeeDelete(id);
     }
 }

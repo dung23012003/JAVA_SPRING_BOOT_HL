@@ -1,7 +1,7 @@
 package com.lesson3.lesson3.entity;
 
 public class NNDEmployee {
-    private Long id;
+    private int id;
     private String firstName;
     private String lastName;
     private float salary;
@@ -10,7 +10,7 @@ public class NNDEmployee {
     public NNDEmployee() {
     }
 
-    public NNDEmployee(Long id, String firstName, String lastName, float salary, String email) {
+    public NNDEmployee(int id, String firstName, String lastName, float salary, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -18,11 +18,11 @@ public class NNDEmployee {
         this.email = email;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
