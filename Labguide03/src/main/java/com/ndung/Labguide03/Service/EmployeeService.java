@@ -20,7 +20,7 @@ public class EmployeeService {
     private MonHocService monHocService;  // Inject MonHocService
 
     public EmployeeService() {
-        employeeList.add(new Employee(1L, "Nguyen Van A", "Nam", 30, 1000.0));
+        employeeList.add(new Employee(1L, "Nguyen Ngoc Dung", "Nam", 22, 1000.0));
         employeeList.add(new Employee(2L, "Tran Thi B", "Nữ", 28, 1200.0));
     }
 
